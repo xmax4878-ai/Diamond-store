@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMH DIAMOND SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">SMH DIAMOND SHOP</div>
+        <div class="header-icons">
+            <span class="bell-icon">🔔</span>
+            <span class="menu-icon">☰</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="banner-section">
+            <img src="https://via.placeholder.com/800x200" alt="Banner" class="banner-image">
+        </div>
+
+        <div class="account-section">
+            <h2 class="section-title">အကောင့်ဝင်ပြီးမှသာ ဝယ်ယူနိုင်မည် ဖြစ်ပါသည်</h2>
+            <div class="account-buttons">
+                <button class="account-btn" id="login-btn">အကောင့်ဝင်ရန်</button>
+                <button class="account-btn" id="register-btn">အကောင့်သစ်ဖွင့်ရန်</button>
+            </div>
+        </div>
+
+        <div class="input-section" style="display: none;">
+            <h2 class="section-title">ID အမျိုးအစားစစ်ရန်</h2>
+            <div class="input-group">
+                <label for="user-id">Game ID</label>
+                <input type="text" id="user-id" placeholder="(User ID)">
+                <input type="text" id="server-id" placeholder="(Server ID)">
+            </div>
+            <button class="check-id-btn">Check ID</button>
+        </div>
+
+        <div class="product-section">
+            <h2 class="section-title">OUR PRODUCTS</h2>
+            <div class="products-grid" id="products-grid">
+                </div>
+        </div>
+
+        <div id="purchase-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 class="modal-title">အချက်အလက်များဖြည့်သွင်းပါ</h2>
+                <div class="modal-user-info">
+                    <p>Game ID: <span id="modal-user-id"></span></p>
+                    <p>Server ID: <span id="modal-server-id"></span></p>
+                </div>
+                <p id="modal-package-info"></p>
+                
+                <div class="modal-buttons">
+                    <button class="modal-btn" id="modal-confirm-btn">ဝယ်ယူမည်</button>
+                    <button class="modal-btn" id="modal-cancel-btn">ပယ်ဖျက်မည်</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
